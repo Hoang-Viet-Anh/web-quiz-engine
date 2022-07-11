@@ -1,0 +1,2090 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class tests.WebQuizEngineTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class tests.WebQuizEngineTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/tests.html">tests</a> &gt; WebQuizEngineTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">35.116s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">start</td>
+<td class="success">35.116s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[1;31m
+Start test 1?[0m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-11 02:17:47.691  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine using Java 17.0.2 on vietanh-Vostro-15-3515 with PID 21455 (started by viet-anh in /home/viet-anh/IdeaProjects/Web Quiz Engine/Web Quiz Engine/task)
+2022-07-11 02:17:47.695  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-07-11 02:17:49.029  INFO 21455 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-11 02:17:49.100  INFO 21455 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2022-07-11 02:17:49.801  INFO 21455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2022-07-11 02:17:49.817  INFO 21455 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 02:17:49.817  INFO 21455 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 02:17:49.946  INFO 21455 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 02:17:49.947  INFO 21455 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2192 ms
+2022-07-11 02:17:50.345  INFO 21455 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-11 02:17:50.394  INFO 21455 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-11 02:17:50.583  INFO 21455 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-11 02:17:50.687  INFO 21455 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-11 02:17:51.068  INFO 21455 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-11 02:17:51.084  INFO 21455 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: alter table quiz add constraint FK1tofsm1qynhakggx7ttqh8ihu foreign key (user_id) references user (id)
+Hibernate: alter table quiz_answer add constraint FKoxi2td1x8cc3y4a0vlsg2hfnc foreign key (quiz_id) references quiz (id)
+Hibernate: alter table quiz_options add constraint FKsx28j7orq6asg17veq9nblhw8 foreign key (quiz_id) references quiz (id)
+2022-07-11 02:17:52.004  INFO 21455 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-11 02:17:52.016  INFO 21455 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-11 02:17:52.547  WARN 21455 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-11 02:17:53.038  INFO 21455 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-11 02:17:53.116  INFO 21455 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f0a5848, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c6db00d, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c7a4986, org.springframework.security.web.header.HeaderWriterFilter@69af938b, org.springframework.security.web.authentication.logout.LogoutFilter@4cc4f6bd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7e305953, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fb2645b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5da41d02, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@732fa176, org.springframework.security.web.session.SessionManagementFilter@4b20a8e4, org.springframework.security.web.access.ExceptionTranslationFilter@1930e8ef, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@55f4ec04]
+2022-07-11 02:17:53.376  INFO 21455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2022-07-11 02:17:53.393  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 6.106 seconds (JVM running for 7.035)
+2022-07-11 02:17:53.694  INFO 21455 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 02:17:53.694  INFO 21455 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 02:17:53.697  INFO 21455 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: insert into user (email, password, role) values (?, ?, ?)
+?[1;31m
+Start test 2?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: insert into user (email, password, role) values (?, ?, ?)
+?[1;31m
+Start test 3?[0m
+?[1;31m
+Start test 4?[0m
+?[1;31m
+Start test 5?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+?[1;31m
+Start test 6?[0m
+?[1;31m
+Start test 7?[0m
+?[1;31m
+Start test 8?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+?[1;31m
+Start test 9?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+?[1;31m
+Start test 10?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 11?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 12?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 13?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 14?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 15?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 16?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 17?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 18?[0m
+?[1;31m
+Start test 19?[0m
+?[1;31m
+Start test 20?[0m
+?[1;31m
+Start test 21?[0m
+?[1;31m
+Start test 22?[0m
+?[1;31m
+Start test 23?[0m
+?[1;31m
+Start test 24?[0m
+?[1;31m
+Start test 25?[0m
+?[1;31m
+Start test 26?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+?[1;31m
+Start test 27?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+?[1;31m
+Start test 28?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+?[1;31m
+Start test 29?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+?[1;31m
+Start test 30?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+?[1;31m
+Start test 31?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+?[1;31m
+Start test 32?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+?[1;31m
+Start test 33?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+?[1;31m
+Start test 34?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 35?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 36?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 37?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 38?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 39?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 40?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 41?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 42?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 43?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 44?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 45?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 46?[0m
+2022-07-11 02:17:58.507  INFO 21455 --- [       Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-11 02:17:58.512  INFO 21455 --- [       Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-11 02:17:58.526  INFO 21455 --- [       Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-11 02:17:58.633  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine using Java 17.0.2 on vietanh-Vostro-15-3515 with PID 21455 (started by viet-anh in /home/viet-anh/IdeaProjects/Web Quiz Engine/Web Quiz Engine/task)
+2022-07-11 02:17:58.633  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-07-11 02:17:58.970  INFO 21455 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-11 02:17:58.987  INFO 21455 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 4 JPA repository interfaces.
+2022-07-11 02:17:59.135  INFO 21455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2022-07-11 02:17:59.136  INFO 21455 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 02:17:59.137  INFO 21455 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 02:17:59.180  INFO 21455 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 02:17:59.181  INFO 21455 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 545 ms
+2022-07-11 02:17:59.301  INFO 21455 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-11 02:17:59.306  INFO 21455 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-07-11 02:17:59.349  INFO 21455 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-07-11 02:17:59.350  INFO 21455 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: alter table quiz add constraint FK1tofsm1qynhakggx7ttqh8ihu foreign key (user_id) references user (id)
+Hibernate: alter table quiz_answer add constraint FKoxi2td1x8cc3y4a0vlsg2hfnc foreign key (quiz_id) references quiz (id)
+Hibernate: alter table quiz_options add constraint FKsx28j7orq6asg17veq9nblhw8 foreign key (quiz_id) references quiz (id)
+2022-07-11 02:17:59.534  INFO 21455 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-11 02:17:59.535  INFO 21455 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-11 02:17:59.681  WARN 21455 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-11 02:17:59.840  INFO 21455 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-11 02:17:59.854  INFO 21455 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@262ea940, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6aa152b7, org.springframework.security.web.context.SecurityContextPersistenceFilter@48611ad4, org.springframework.security.web.header.HeaderWriterFilter@53115ee0, org.springframework.security.web.authentication.logout.LogoutFilter@1967c032, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@436867c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4434eb51, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d0b4b69, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@54b88247, org.springframework.security.web.session.SessionManagementFilter@6314e967, org.springframework.security.web.access.ExceptionTranslationFilter@fd07138, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16750a5e]
+2022-07-11 02:17:59.944  INFO 21455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2022-07-11 02:17:59.952  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 1.353 seconds (JVM running for 13.594)
+?[1;31m
+Start test 47?[0m
+2022-07-11 02:17:59.958  INFO 21455 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 02:17:59.959  INFO 21455 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 02:17:59.963  INFO 21455 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 48?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 49?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 50?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 51?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 52?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 53?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 54?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 55?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 56?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 57?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+2022-07-11 02:18:01.180  WARN 21455 --- [nio-8889-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries&lt;EOL&gt; at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 4]]
+?[1;31m
+Start test 58?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+2022-07-11 02:18:01.283  WARN 21455 --- [nio-8889-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries&lt;EOL&gt; at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 4]]
+?[1;31m
+Start test 59?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+2022-07-11 02:18:01.378  WARN 21455 --- [nio-8889-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries&lt;EOL&gt; at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 4, column: 4]]
+?[1;31m
+Start test 60?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+2022-07-11 02:18:01.473  WARN 21455 --- [nio-8889-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries&lt;EOL&gt; at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 4]]
+?[1;31m
+Start test 61?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+2022-07-11 02:18:01.578  WARN 21455 --- [nio-8889-exec-8] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity&lt;java.lang.String&gt; engine.controllers.QuizController.addQuiz(engine.model.quiz.Quiz,org.springframework.security.core.Authentication,org.springframework.validation.Errors): [Field error in object 'quiz' on field 'options': rejected value [null]; codes [NotNull.quiz.options,NotNull.options,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quiz.options,options]; arguments []; default message [options]]; default message [must not be null]] ]
+?[1;31m
+Start test 62?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+2022-07-11 02:18:01.666  WARN 21455 --- [nio-8889-exec-9] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries&lt;EOL&gt; at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 4]]
+?[1;31m
+Start test 63?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+2022-07-11 02:18:01.758  WARN 21455 --- [io-8889-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('&quot;' (code 34)): was expecting comma to separate Object entries&lt;EOL&gt; at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 4]]
+?[1;31m
+Start test 64?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 65?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 66?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 67?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 68?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 69?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 70?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 71?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 72?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 73?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 74?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 75?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 76?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 77?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 78?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 79?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 80?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 81?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 82?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 83?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 84?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 85?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 86?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 87?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 88?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 89?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 90?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 91?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 92?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 93?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 94?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 95?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 96?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 97?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 98?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 99?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 100?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 101?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 102?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 103?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+?[1;31m
+Start test 104?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 105?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 106?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 107?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 108?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 109?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 110?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 111?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 112?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 113?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 114?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 115?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 116?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 117?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 118?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 119?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 120?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 121?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+?[1;31m
+Start test 122?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 123?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 124?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 125?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 126?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 127?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 128?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 129?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 130?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 131?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 132?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 133?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 134?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 135?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 136?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 137?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 138?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 139?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 140?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 141?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 142?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 143?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 144?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 145?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 146?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 147?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 148?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 149?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 150?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 151?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 152?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 153?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 154?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 155?[0m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-11 02:18:11.237  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine using Java 17.0.2 on vietanh-Vostro-15-3515 with PID 21455 (started by viet-anh in /home/viet-anh/IdeaProjects/Web Quiz Engine/Web Quiz Engine/task)
+2022-07-11 02:18:11.237  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-07-11 02:18:11.238  INFO 21455 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-07-11 02:18:11.481  INFO 21455 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-11 02:18:11.493  INFO 21455 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 4 JPA repository interfaces.
+2022-07-11 02:18:11.591  INFO 21455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2022-07-11 02:18:11.592  INFO 21455 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 02:18:11.592  INFO 21455 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 02:18:11.605  INFO 21455 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 02:18:11.605  INFO 21455 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 364 ms
+2022-07-11 02:18:11.696  INFO 21455 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-11 02:18:11.699  INFO 21455 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-07-11 02:18:11.738  INFO 21455 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-07-11 02:18:11.738  INFO 21455 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: alter table quiz add constraint FK1tofsm1qynhakggx7ttqh8ihu foreign key (user_id) references user (id)
+Hibernate: alter table quiz_answer add constraint FKoxi2td1x8cc3y4a0vlsg2hfnc foreign key (quiz_id) references quiz (id)
+Hibernate: alter table quiz_options add constraint FKsx28j7orq6asg17veq9nblhw8 foreign key (quiz_id) references quiz (id)
+2022-07-11 02:18:11.910  INFO 21455 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-11 02:18:11.910  INFO 21455 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-11 02:18:12.039  WARN 21455 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-11 02:18:12.178  INFO 21455 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-11 02:18:12.189  INFO 21455 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b5d0c4d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cc91654, org.springframework.security.web.context.SecurityContextPersistenceFilter@5b6a9ef6, org.springframework.security.web.header.HeaderWriterFilter@57f8a3cf, org.springframework.security.web.authentication.logout.LogoutFilter@4390b78f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1320d929, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@16bed816, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cae7d5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c72c488, org.springframework.security.web.session.SessionManagementFilter@5713e261, org.springframework.security.web.access.ExceptionTranslationFilter@357f0cc9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1508bc71]
+2022-07-11 02:18:12.277  INFO 21455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2022-07-11 02:18:12.283  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 1.075 seconds (JVM running for 25.925)
+?[1;31m
+Start test 156?[0m
+2022-07-11 02:18:12.288  INFO 21455 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 02:18:12.289  INFO 21455 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 02:18:12.291  INFO 21455 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 157?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+?[1;31m
+Start test 158?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 159?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+?[1;31m
+Start test 160?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 161?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 162?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 163?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 164?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 165?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 166?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 167?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 168?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 169?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 170?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 171?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+?[1;31m
+Start test 172?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+?[1;31m
+Start test 173?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+?[1;31m
+Start test 174?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+?[1;31m
+Start test 175?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+?[1;31m
+Start test 176?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+?[1;31m
+Start test 177?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 178?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 179?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 180?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 181?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 182?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+?[1;31m
+Start test 183?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select answer0_.quiz_id as quiz_id1_1_0_, answer0_.answer as answer2_1_0_ from quiz_answer answer0_ where answer0_.quiz_id=?
+Hibernate: insert into time_of_complete (time, quiz_id, user) values (?, ?, ?)
+?[1;31m
+Start test 184?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 185?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 186?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 187?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 188?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 189?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 190?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?, ?
+?[1;31m
+Start test 191?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 192?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 193?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 194?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 195?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 196?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?
+Hibernate: select count(completeti0_.complete_id) as col_0_0_ from time_of_complete completeti0_ where completeti0_.user=?
+?[1;31m
+Start test 197?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?, ?
+?[1;31m
+Start test 198?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select completeti0_.complete_id as complete1_3_, completeti0_.time as time2_3_, completeti0_.quiz_id as quiz_id3_3_, completeti0_.user as user4_3_ from time_of_complete completeti0_ where completeti0_.user=? order by completeti0_.time desc, completeti0_.quiz_id desc limit ?, ?
+?[1;31m
+Start test 199?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: delete from quiz_options where quiz_id=?
+Hibernate: delete from quiz where id=?
+?[1;31m
+Start test 200?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 201?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 202?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 203?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 204?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 205?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+?[1;31m
+Start test 206?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+?[1;31m
+Start test 207?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+Hibernate: select quiz0_.id as id1_0_0_, quiz0_.text as text2_0_0_, quiz0_.title as title3_0_0_, quiz0_.user_id as user_id4_0_0_, user1_.id as id1_4_1_, user1_.email as email2_4_1_, user1_.password as password3_4_1_, user1_.role as role4_4_1_ from quiz quiz0_ left outer join user user1_ on quiz0_.user_id=user1_.id where quiz0_.id=?
+Hibernate: delete from quiz_answer where quiz_id=?
+Hibernate: delete from quiz_options where quiz_id=?
+Hibernate: delete from quiz where id=?
+?[1;31m
+Start test 208?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 209?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 210?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 211?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 212?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 213?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 214?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 215?[0m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.7.1)
+
+2022-07-11 02:18:19.004  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : Starting WebQuizEngine using Java 17.0.2 on vietanh-Vostro-15-3515 with PID 21455 (started by viet-anh in /home/viet-anh/IdeaProjects/Web Quiz Engine/Web Quiz Engine/task)
+2022-07-11 02:18:19.004  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2022-07-11 02:18:19.220  INFO 21455 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-11 02:18:19.232  INFO 21455 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 4 JPA repository interfaces.
+2022-07-11 02:18:19.345  INFO 21455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2022-07-11 02:18:19.347  INFO 21455 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-07-11 02:18:19.347  INFO 21455 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-11 02:18:19.364  INFO 21455 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-07-11 02:18:19.365  INFO 21455 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 359 ms
+2022-07-11 02:18:19.473  INFO 21455 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-11 02:18:19.479  INFO 21455 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-07-11 02:18:19.499  INFO 21455 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-07-11 02:18:19.500  INFO 21455 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Hibernate: alter table quiz add constraint FK1tofsm1qynhakggx7ttqh8ihu foreign key (user_id) references user (id)
+Hibernate: alter table quiz_answer add constraint FKoxi2td1x8cc3y4a0vlsg2hfnc foreign key (quiz_id) references quiz (id)
+Hibernate: alter table quiz_options add constraint FKsx28j7orq6asg17veq9nblhw8 foreign key (quiz_id) references quiz (id)
+2022-07-11 02:18:19.675  INFO 21455 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-11 02:18:19.676  INFO 21455 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-11 02:18:19.826  WARN 21455 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-07-11 02:18:19.945  INFO 21455 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2022-07-11 02:18:19.956  INFO 21455 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57082d16, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ae2227, org.springframework.security.web.context.SecurityContextPersistenceFilter@47c8c176, org.springframework.security.web.header.HeaderWriterFilter@6f014f27, org.springframework.security.web.authentication.logout.LogoutFilter@7d97a1a0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@46092840, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d9b79a2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@38067d41, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3a1eb893, org.springframework.security.web.session.SessionManagementFilter@185b998d, org.springframework.security.web.access.ExceptionTranslationFilter@834944, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@42cf08a1]
+2022-07-11 02:18:20.037  INFO 21455 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2022-07-11 02:18:20.043  INFO 21455 --- [    Test worker] engine.WebQuizEngine                     : Started WebQuizEngine in 1.067 seconds (JVM running for 33.685)
+?[1;31m
+Start test 216?[0m
+2022-07-11 02:18:20.049  INFO 21455 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-11 02:18:20.049  INFO 21455 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-07-11 02:18:20.051  INFO 21455 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 217?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 218?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 219?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 220?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select count(*) as col_0_0_ from quiz quiz0_ where quiz0_.id=?
+?[1;31m
+Start test 221?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 222?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 223?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 224?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 225?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 226?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 227?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 228?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 229?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 230?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+Hibernate: insert into quiz (text, title, user_id) values (?, ?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_answer (quiz_id, answer) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+Hibernate: insert into quiz_options (quiz_id, options) values (?, ?)
+?[1;31m
+Start test 231?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select count(quiz0_.id) as col_0_0_ from quiz quiz0_
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 232?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select count(quiz0_.id) as col_0_0_ from quiz quiz0_
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 233?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?, ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+?[1;31m
+Start test 234?[0m
+Hibernate: select user0_.id as col_0_0_ from user user0_ where user0_.email=? limit ?
+Hibernate: select user0_.id as id1_4_, user0_.email as email2_4_, user0_.password as password3_4_, user0_.role as role4_4_ from user user0_ where user0_.email=?
+false
+Hibernate: select quiz0_.id as id1_0_, quiz0_.text as text2_0_, quiz0_.title as title3_0_, quiz0_.user_id as user_id4_0_ from quiz quiz0_ limit ?, ?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select user0_.id as id1_4_0_, user0_.email as email2_4_0_, user0_.password as password3_4_0_, user0_.role as role4_4_0_ from user user0_ where user0_.id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+Hibernate: select options0_.quiz_id as quiz_id1_2_0_, options0_.options as options2_2_0_ from quiz_options options0_ where options0_.quiz_id=?
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.3.3</a> at Jul 11, 2022, 2:18:22 AM</p>
+</div>
+</div>
+</body>
+</html>
